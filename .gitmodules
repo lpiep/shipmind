@@ -1,0 +1,6 @@
+[submodule "mounts/modules/MMM-Todoist"]
+	path = mounts/modules/MMM-Todoist
+	url = https://github.com/cbrooker/MMM-Todoist.git
+[submodule "mounts/modules/MMM-CalendarExt2"]
+	path = mounts/modules/MMM-CalendarExt2
+	url = https://github.com/MMM-CalendarExt2/MMM-CalendarExt2.git
