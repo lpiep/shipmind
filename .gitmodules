@@ -7,3 +7,6 @@
 [submodule "mounts/modules/MMM-RandomPhoto"]
 	path = mounts/modules/MMM-RandomPhoto
 	url = https://github.com/skuethe/MMM-RandomPhoto.git
+[submodule "mounts/modules/MMM-wiki"]
+	path = mounts/modules/MMM-wiki
+	url = https://github.com/mihairinzis/MMM-wiki

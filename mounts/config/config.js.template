@@ -159,14 +159,14 @@ let config = {
 		},
 		{
 			module: "helloworld",
-			position: "bottom_center", // This can be any of the regions.
+			position: "bottom_right", // This can be any of the regions.
 			config: {
 				text: "Newt of the Day",
 			},
   		},
 		{
 			module: 'MMM-RandomPhoto',
-			position: 'bottom_center',
+			position: 'bottom_right',
 			config: {
 				imageRepository: "localdirectory",
 				repositoryConfig: {
@@ -176,6 +176,28 @@ let config = {
 				opacity: 1,
 				updateInterval: 60*60*24, //daily
 				showStatusIcon: false,
+			}
+		},
+		{
+			module: "MMM-wiki",
+			position: "bottom",
+			config: {
+				updateInterval: 3600000,
+				language: "en",
+				characterLimit: 500,
+				category: "undefined", 
+				badTitles: [
+					"Graphical",
+					"timeline",
+					"List"
+				],
+				badContents: [
+					"This article",
+					"See also",
+					"redirects here",
+					"The following outline",
+					"may refer to"
+				],
 			}
 		},
 	]
