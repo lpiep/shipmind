@@ -66,10 +66,6 @@ let config = {
 				fade: false,   
 				calendars: [
 					{
-						symbol: "holidays",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics",
-					},
-					{
 						symbol: "logan-home",
 						url: "${LOGAN_CAL_ICS}",
 					},
@@ -78,76 +74,6 @@ let config = {
 						url: "${LINDSAY_CAL_ICS}",
 					}
 				]
-			}
-		},
-		{
-			module: "calendar",
-			header: "Lindsay's Calendar",
-			position: "top_left",
-			config: {
-				coloredText: false,
-				coloredBorder: false,
-				coloredSymbol: false,
-				coloredBackground: false,
-				maximumNumberOfDays: 7,
-				maximumEntries: 7,
-				timeFormat: 'absolute',
-				fade: false,   
-				calendars: [
-					{
-						symbol: "lindsay-home",
-						url: "${LINDSAY_CAL_ICS}",
-					}
-				]
-			}
-		},
-		{
-			module: "calendar",
-			header: "Logan's Calendar",
-			position: "top_left",
-			config: {
-				coloredText: false,
-				coloredBorder: false,
-				coloredSymbol: false,
-				coloredBackground: false,
-				maximumNumberOfDays: 7,
-				maximumEntries: 7,
-				timeFormat: 'absolute',
-				fade: false,   
-				calendars: [
-					{
-						symbol: "logan-home",
-						url: "${LOGAN_CAL_ICS}",
-					}
-				]
-			}
-		},
-		/*{
-			module: "compliments",
-			position: "lower_third"
-		},*/
-		{
-			module: "weather",
-			position: "top_right",
-			config: {
-				weatherProvider: "openweathermap",
-				onlyTemp: 'true',
-				type: "current",
-				showPrecipitationProbability: 'true',
-				location: "Bellingham",
-				/*locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city*/
-				apiKey: "${OPENWEATHER_API_KEY}"
-			}
-		},		{
-			module: "weather",
-			position: "top_right",
-			config: {
-				weatherProvider: "openweathermap",
-				type: "daily",
-				location: "Bellingham",
-				/*locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city*/
-				apiKey: "${OPENWEATHER_API_KEY}",
-				fade: false, 
 			}
 		},
 		{
@@ -166,30 +92,92 @@ let config = {
 				projects: [ 2315299937 ], 
 				//labels: [ "MagicMirror", "Important" ] // Tasks for any projects with these labels will be shown.
 				maxTitleLength: 50,
-		  }
+		  	}
+		},
+		{
+			module: "calendar",
+			header: "Full Calendar",
+			position: "top_right",
+			config: {
+				coloredText: false,
+				coloredBorder: false,
+				coloredSymbol: true,
+				coloredBackground: false,
+				maximumNumberOfDays: 7,
+				maximumEntries: 7,
+				timeFormat: 'absolute',
+				fade: false,   
+				calendars: [
+					{
+						name: "lindsay-home",
+						symbol: "calendar",
+						url: "${LINDSAY_CAL_ICS}",
+						color: 'BlueViolet',
+					},
+					{
+						name: "logan-home",
+						symbol: "calendar",
+						url: "${LOGAN_CAL_ICS}",
+						color: 'DarkRed',
+					},
+					{
+						name: "holidays",
+						symbol: "calendar",
+						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics",
+						color: 'white',
+					},
+				]
+			}
 		},
 		/*{
-			module: 'MMM-CalendarExt2',
-			config: {
-			  calendars : [
-				{
-					name: 'logan',
-				  	url: "${LOGAN_CAL_ICS}",
-				},
-			  ],
-			  views: [
-				{
-				  	mode: "daily",
-				},
-			  ],
-			  scenes: [
-				{
-				  	name: "DEFAULT",
-				},
-			  ],
-			  show: [],
-			},
+			module: "compliments",
+			position: "lower_third"
 		},*/
+		{
+			module: "weather",
+			position: "top_center",
+			config: {
+				weatherProvider: "openweathermap",
+				onlyTemp: 'true',
+				type: "current",
+				showPrecipitationProbability: 'true',
+				location: "Bellingham",
+				/*locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city*/
+				apiKey: "${OPENWEATHER_API_KEY}"
+			}
+		},		{
+			module: "weather",
+			position: "top_center",
+			config: {
+				weatherProvider: "openweathermap",
+				type: "daily",
+				location: "Bellingham",
+				/*locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city*/
+				apiKey: "${OPENWEATHER_API_KEY}",
+				fade: false, 
+			}
+		},
+		{
+			module: "helloworld",
+			position: "bottom_center", // This can be any of the regions.
+			config: {
+				text: "Newt of the Day",
+			},
+  		},
+		{
+			module: 'MMM-RandomPhoto',
+			position: 'bottom_center',
+			config: {
+				imageRepository: "localdirectory",
+				repositoryConfig: {
+					path: "/opt/magic_mirror/photos",
+					recursive: true,
+				},
+				opacity: 1,
+				updateInterval: 60*60*24, //daily
+				showStatusIcon: false,
+			}
+		},
 	]
 };
 

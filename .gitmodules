@@ -4,3 +4,6 @@
 [submodule "mounts/modules/MMM-CalendarExt2"]
 	path = mounts/modules/MMM-CalendarExt2
 	url = https://github.com/MMM-CalendarExt2/MMM-CalendarExt2.git
+[submodule "mounts/modules/MMM-RandomPhoto"]
+	path = mounts/modules/MMM-RandomPhoto
+	url = https://github.com/skuethe/MMM-RandomPhoto.git
