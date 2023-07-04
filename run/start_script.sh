@@ -6,6 +6,8 @@ npm install request
 npm install
 cd "$OLDPWD"
 
-cd ../MMM-RandomPhoto
-npm install
+#cd ../MMM-RandomPhoto
+#npm install jquery
+#npm install
+
 cd "$OLDPWD"

@@ -11,7 +11,6 @@ services:
       - ../mounts/modules:/opt/magic_mirror/modules
       - ../mounts/css:/opt/magic_mirror/css
       - ./start_script.sh:/opt/magic_mirror/start_script.sh
-      - ${RANDOM_PHOTO_DIR_LOCAL}:/opt/magic_mirror/photos # set path in .env
     restart: unless-stopped
     command: 
       - npm

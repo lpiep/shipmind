@@ -10,3 +10,6 @@
 [submodule "mounts/modules/MMM-wiki"]
 	path = mounts/modules/MMM-wiki
 	url = https://github.com/mihairinzis/MMM-wiki
+[submodule "mounts/modules/MMM-ImageSlideshow"]
+	path = mounts/modules/MMM-ImageSlideshow
+	url = https://github.com/AdamMoses-GitHub/MMM-ImageSlideshow.git
