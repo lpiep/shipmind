@@ -120,12 +120,6 @@ let config = {
 						url: "${LOGAN_CAL_ICS}",
 						color: 'DarkRed',
 					},
-					{
-						name: "holidays",
-						symbol: "calendar",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics",
-						color: 'white',
-					},
 				]
 			}
 		},
