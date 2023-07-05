@@ -175,7 +175,7 @@ let config = {
 				updateInterval: 3600000,
 				language: "en",
 				characterLimit: 500,
-				category: "undefined", 
+				category: "DidYouKnow", 
 				badTitles: [
 					"Graphical",
 					"timeline",
