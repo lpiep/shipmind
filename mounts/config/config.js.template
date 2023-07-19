@@ -63,6 +63,8 @@ let config = {
 				coloredSymbol: true,
 				coloredBackground: false,
 				maximumNumberOfDays: 1,
+				/*pastDaysCount:1,*/
+				limitDaysNeverSkip: true, /* seems to prevent imminent events from disappearing */
 				timeFormat: 'dateheaders',
 				fade: false,   
 				calendars: [
