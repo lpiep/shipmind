@@ -56,28 +56,34 @@ let config = {
 			module: "calendar",
 			header: "Today",
 			position: "top_left",
+			classes: "highlight",
 			config: {
 				coloredText: false,
 				coloredBorder: false,
-				coloredSymbol: false,
+				coloredSymbol: true,
 				coloredBackground: false,
 				maximumNumberOfDays: 1,
-				timeFormat: 'absolute',
+				timeFormat: 'dateheaders',
 				fade: false,   
 				calendars: [
 					{
-						symbol: "logan-home",
-						url: "${LOGAN_CAL_ICS}",
+						name: "lindsay-home",
+						symbol: "calendar",
+						url: "${LINDSAY_CAL_ICS}",
+						color: 'BlueViolet',
 					},
 					{
-						symbol: "lindsay-home",
-						url: "${LINDSAY_CAL_ICS}",
-					}
+						name: "logan-home",
+						symbol: "calendar",
+						url: "${LOGAN_CAL_ICS}",
+						color: 'DarkRed',
+					},
 				]
 			}
 		},
 		{
 			module: 'MMM-Todoist',
+			classes: "highlight",
 			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
 			header: 'Honey Do 🐝', // This is optional
 			config: { // See 'Configuration options' for more information.
@@ -92,6 +98,7 @@ let config = {
 				projects: [ 2315299937 ], 
 				//labels: [ "MagicMirror", "Important" ] // Tasks for any projects with these labels will be shown.
 				maxTitleLength: 50,
+				displayAvatar: true,
 		  	}
 		},
 		{
@@ -105,7 +112,8 @@ let config = {
 				coloredBackground: false,
 				maximumNumberOfDays: 7,
 				maximumEntries: 7,
-				timeFormat: 'absolute',
+				pastDaysCount: -1,
+				timeFormat: 'dateheaders',
 				fade: false,   
 				calendars: [
 					{
@@ -131,23 +139,27 @@ let config = {
 			module: "weather",
 			position: "top_center",
 			config: {
-				weatherProvider: "openweathermap",
+				weatherProvider: "weathergov",
+				apiBase: "https://api.weather.gov/points/",
+				lat: 48.76745,
+				lon: -122.47485,
+				/*weatherProvider: "openweathermap",*/
 				onlyTemp: 'true',
 				type: "current",
 				showPrecipitationProbability: 'true',
-				location: "Bellingham",
+				/*location: "Bellingham",*/
 				/*locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city*/
-				apiKey: "${OPENWEATHER_API_KEY}"
+				/*apiKey: "${OPENWEATHER_API_KEY}",*/
 			}
 		},		{
 			module: "weather",
 			position: "top_center",
 			config: {
-				weatherProvider: "openweathermap",
-				type: "daily",
-				location: "Bellingham",
-				/*locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city*/
-				apiKey: "${OPENWEATHER_API_KEY}",
+				weatherProvider: "weathergov",
+				apiBase: "https://api.weather.gov/points/",
+				lat: 48.76745,
+				lon: -122.47485,
+				type: "forecast",
 				fade: false, 
 			}
 		},

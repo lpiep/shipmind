@@ -53,3 +53,6 @@
     margin-right: auto;
   }
   */
+  .highlight .small {    
+    --font-size-small: 1.25rem;
+  }
