@@ -63,9 +63,9 @@ let config = {
 				coloredSymbol: true,
 				coloredBackground: false,
 				maximumNumberOfDays: 1,
-				/*pastDaysCount:1,*/
 				limitDaysNeverSkip: true, /* seems to prevent imminent events from disappearing */
-				timeFormat: 'dateheaders',
+				timeFormat: 'absolute',
+				getRelative: 1, /* start displaying events as relative one hour out  */
 				fade: false,   
 				calendars: [
 					{
@@ -114,7 +114,7 @@ let config = {
 				coloredBackground: false,
 				maximumNumberOfDays: 7,
 				maximumEntries: 7,
-				pastDaysCount: -1,
+				dateFormat: 'dddd',
 				timeFormat: 'dateheaders',
 				fade: false,   
 				calendars: [
