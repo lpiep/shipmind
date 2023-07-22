@@ -12,6 +12,7 @@ services:
       - ../mounts/css:/opt/magic_mirror/css
       - ./start_script.sh:/opt/magic_mirror/start_script.sh
       - /etc/localtime:/etc/localtime:ro
+      - ./custom_translations.json:/opt/magic_mirror/translations/en.json
     restart: unless-stopped
     command: 
       - npm

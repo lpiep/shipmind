@@ -87,25 +87,39 @@ let config = {
 			module: 'MMM-Todoist',
 			classes: "highlight",
 			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
-			header: 'Honey Do 🐝', // This is optional
+			header: 'Honey Do 🐝 - Lindsay', // This is optional
 			config: { // See 'Configuration options' for more information.
 				hideWhenEmpty: false,
 				accessToken: "${TODOIST_API_KEY}",
 				maximumEntries: 10,
-				updateInterval: 10*60*1000, // Update every 10 minutes
+				updateInterval: 1*60*1000, // Update every 1 minutes
 				fade: false,   
 				showProject: false,  
 				wrapEvents: true, 
-				// projects and/or labels is mandatory:
 				projects: [ 2315299937 ], 
-				//labels: [ "MagicMirror", "Important" ] // Tasks for any projects with these labels will be shown.
 				maxTitleLength: 50,
-				displayAvatar: true,
+		  	}
+		},
+		{
+			module: 'MMM-Todoist',
+			classes: "highlight",
+			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
+			header: 'Honey Do 🍯 - Logan', // This is optional
+			config: { // See 'Configuration options' for more information.
+				hideWhenEmpty: false,
+				accessToken: "${TODOIST_API_KEY}",
+				maximumEntries: 10,
+				updateInterval: 1*60*1000, // Update every 1 minutes
+				fade: false,   
+				showProject: false,  
+				wrapEvents: true, 
+				projects: [ 2316435774 ], 
+				maxTitleLength: 50,
 		  	}
 		},
 		{
 			module: "calendar",
-			header: "Full Calendar",
+			header: "Upcoming",
 			position: "top_right",
 			config: {
 				coloredText: false,
