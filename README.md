@@ -36,3 +36,12 @@ Images are copied nightly using cron to `shipmind/mounts/modules/MMM-ImageSlides
 
 Some messages (such as the default message when the calendar has no events) are
 overridden in `shipmind/run/custom_translations.json`. 
+
+### Security
+
+API keys and secret links are stored in `/run/secret.env`, which is of course not tracked in this repo and must be copied to the server before running. Currently requires these variables: 
+ - `TODOIST_API_KEY`
+ - `LOGAN_CAL_ICS`
+ - `LINDSAY_CAL_ICS`
+
+Access to the shared Google photos album should be controlled on Drive. 
