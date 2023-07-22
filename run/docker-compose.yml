@@ -11,6 +11,7 @@ services:
       - ../mounts/modules:/opt/magic_mirror/modules
       - ../mounts/css:/opt/magic_mirror/css
       - ./start_script.sh:/opt/magic_mirror/start_script.sh
+      - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     command: 
       - npm
@@ -18,5 +19,6 @@ services:
       - server
     environment: 
       MM_SHOW_CURSOR: "true"
+      TZ:  "America/Los_Angeles"
     env_file:
       - secrets.env
