@@ -64,9 +64,13 @@ let config = {
 				coloredBackground: false,
 				maximumNumberOfDays: 1,
 				limitDaysNeverSkip: true, /* seems to prevent imminent events from disappearing */
-				timeFormat: 'absolute',
-				getRelative: 1, /* start displaying events as relative one hour out  */
+				urgency:0, 
+				getRelative:0,
+				/* dateFormat: 'h:mm A', timeFormat: 'absolute', */
+				dateFormat: ' ',
+				timeFormat: 'dateheaders',
 				fade: false,   
+				maxTitleLength: 50,
 				calendars: [
 					{
 						name: "lindsay-home",
@@ -131,6 +135,7 @@ let config = {
 				dateFormat: 'dddd',
 				timeFormat: 'dateheaders',
 				fade: false,   
+				maxTitleLength: 50,
 				calendars: [
 					{
 						name: "lindsay-home",

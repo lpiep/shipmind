@@ -29,30 +29,54 @@
     --gap-modules: 30px;
 
   }
-  
-  .wi-day-sunny {
-    color: #ffff00;
-  }
 
+  .region {
+    width:33%;
+  }
+  
+  /* Weather */
+
+  [class*=weathericon][class*="sun"] { color: #ffff00; }
+  [class*=weathericon][class*="rain"] { color: lightskyblue; }
+  [class*=weathericon][class*="showers"] { color: lightskyblue; }
+  [class*=weathericon][class*="sprinkle"] { color: lightskyblue; }
+  [class*=weathericon][class*="haze"] { color: darkkhaki; }
+  [class*=weathericon][class*="smog"] { color: darkkhaki; }
+  [class*=weathericon][class*="smoke"] { color: darkkhaki; }
+  [class*=weathericon][class*="sleet"] { color: #fff; }
+  [class*=weathericon][class*="snow"] { color: #fff; }
+  [class*=weathericon][class*="cloud"] { color: lightgrey; }
+
+
+
+  /* Todoist */ 
   .MMM-Todoist .title {
     padding-left: 1.5em;
     text-indent: -1.5em;
     max-width: 100%;
   }
   
-  .divTableCell.title::before{
+  /* stop mmm-todoist from infecting my calendar */
+  .today {
+    text-decoration: none #03a05c;
+  }
+
+  .tomorrow {
+    text-decoration: none #166cec;
+  }
+
+  /* don't rememeber what this is */ 
+  .divTableCell.title::before{ 
     content:" ☐ ";
   }
-  /*
-  #randomPhoto img {
-    opacity: 0;
-    position: static; 
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  */
+
+  /* Highlight rules (used on imminent/important things) */
   .highlight .small {    
-    --font-size-small: 1.25rem;
+    --font-size-small: 1.15rem;
+    font-weight: 300
   }
+
+  .time {    
+    font-size: .75rem;
+  }
+
