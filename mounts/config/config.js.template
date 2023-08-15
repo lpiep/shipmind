@@ -184,18 +184,18 @@ let config = {
 				fade: false, 
 			}
 		},
-		{
+		/*{
 			module: "helloworld",
 			position: "bottom_right", // This can be any of the regions.
 			config: {
 				text: "Newt of the Day",
 			},
-  		},
+  		},*/
 		{
 			module: 'MMM-ImageSlideshow',
 			position: 'bottom_right',
 			config: {
-				imagePaths: ['modules/MMM-ImageSlideshow/Newt_of_the_day'],
+				imagePaths: ['/opt/magic_mirror/modules/MMM-ImageSlideshow/Newt_of_the_day'],
 				slideshowSpeed: 60*60*24*1000, //daily
 				fixedImageHeight: 300, // in pixels
 				randomizeImageOrder: true,
