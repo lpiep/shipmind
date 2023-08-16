@@ -102,6 +102,7 @@ let config = {
 				wrapEvents: true, 
 				projects: [ 2315299937 ], 
 				maxTitleLength: 50,
+				displayTasksWithinDays: 0,
 		  	}
 		},
 		{
@@ -119,6 +120,7 @@ let config = {
 				wrapEvents: true, 
 				projects: [ 2316435774 ], 
 				maxTitleLength: 50,
+				displayTasksWithinDays: 0,
 		  	}
 		},
 		{
