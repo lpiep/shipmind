@@ -13,6 +13,7 @@ services:
       - ./start_script.sh:/opt/magic_mirror/start_script.sh
       - /etc/localtime:/etc/localtime:ro
       - ./custom_translations.json:/opt/magic_mirror/translations/en.json
+      - /mnt/chromeos/GoogleDrive/MyDrive/Newt_of_the_day:/opt/magic_mirror/modules/MMM-Random-local-image/Newt_of_the_day/
     restart: unless-stopped
     command: 
       - npm
