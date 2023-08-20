@@ -16,3 +16,6 @@
 [submodule "mounts/modules/MMM-Random-local-image"]
 	path = mounts/modules/MMM-Random-local-image
 	url = https://github.com/miccl/MMM-Random-local-image.git
+[submodule "mounts/modules/MMM-AirNow"]
+	path = mounts/modules/MMM-AirNow
+	url = https://github.com/nigel-daniels/MMM-AirNow.git

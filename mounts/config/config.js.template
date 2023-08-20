@@ -186,6 +186,14 @@ let config = {
 				fade: false, 
 			}
 		},
+		{
+		module:		'MMM-AirNow',
+		position:	'top_center',
+		config:		{
+					api_key:	'${AIRNOW_API_KEY}',
+					zip_code:	'98225'
+					}
+		},
 		/*{
 			module: "helloworld",
 			position: "bottom_right", // This can be any of the regions.
@@ -202,6 +210,7 @@ let config = {
 				photoUpdateInterval: 60*60*1000, // Hourly 
 			},
 		},
+		/*
 		{
 			module: "MMM-wiki",
 			position: "bottom",
@@ -223,7 +232,7 @@ let config = {
 					"may refer to"
 				],
 			}
-		},
+		},*/
 	]
 };
 
