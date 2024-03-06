@@ -10,6 +10,7 @@ Use the Todoist App or [Website](https://todoist.com/) to add or check off items
 
 - Honey Do - Logan
 - Honey Do - Lindsay
+- Cleaning
 
 Other projects will not appear on the widget. 
 

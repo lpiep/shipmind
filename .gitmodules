@@ -19,3 +19,6 @@
 [submodule "mounts/modules/MMM-AirNow"]
 	path = mounts/modules/MMM-AirNow
 	url = https://github.com/nigel-daniels/MMM-AirNow.git
+[submodule "mounts/modules/MMM-ImagesPhotos"]
+	path = mounts/modules/MMM-ImagesPhotos
+	url = https://github.com/roramirez/MMM-ImagesPhotos.git

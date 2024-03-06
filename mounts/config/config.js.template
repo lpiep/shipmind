@@ -124,6 +124,24 @@ let config = {
 		  	}
 		},
 		{
+			module: 'MMM-Todoist',
+			classes: "highlight",
+			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
+			header: '🧹 Cleaning', // This is optional
+			config: { // See 'Configuration options' for more information.
+				hideWhenEmpty: false,
+				accessToken: "${TODOIST_API_KEY}",
+				maximumEntries: 10,
+				updateInterval: 1*60*1000, // Update every 1 minutes
+				fade: false,   
+				showProject: false,  
+				wrapEvents: true, 
+				projects: [ 2329820643 ], 
+				maxTitleLength: 50,
+				displayTasksWithinDays: 0,
+		  	}
+		},
+		{
 			module: "calendar",
 			header: "Upcoming",
 			position: "top_right",
@@ -201,13 +219,23 @@ let config = {
 				text: "Newt of the Day",
 			},
   		},*/
-		{
+		/*{
 			module: "MMM-Random-local-image",
 			position: "bottom_right",
 			config: {
-				photoDir: "./assets/MMM-Random-local-image/Newt_of_the_day/",
+				photoDir: "/opt/magic_mirror/assets/Newt_of_the_day",
 				maxHeight: "300px",
 				photoUpdateInterval: 60*60*1000, // Hourly 
+				photoLoadInitialDelay: 60,
+			},
+		},*/
+		{
+			module: "MMM-ImagesPhotos",
+			position: "bottom_right",
+			config: {
+				opacity: 1,
+				updateInterval: 60*60*1000,
+				maxHeight: "300px",
 			},
 		},
 		/*
