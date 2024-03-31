@@ -100,7 +100,7 @@ let config = {
 				fade: false,   
 				showProject: false,  
 				wrapEvents: true, 
-				projects: [ 2315299937 ], 
+				projects: [ 2331065291 ], 
 				maxTitleLength: 50,
 				displayTasksWithinDays: 0,
 		  	}
@@ -118,7 +118,7 @@ let config = {
 				fade: false,   
 				showProject: false,  
 				wrapEvents: true, 
-				projects: [ 2316435774 ], 
+				projects: [ 2331065308 ], 
 				maxTitleLength: 50,
 				displayTasksWithinDays: 0,
 		  	}
@@ -131,12 +131,12 @@ let config = {
 			config: { // See 'Configuration options' for more information.
 				hideWhenEmpty: false,
 				accessToken: "${TODOIST_API_KEY}",
-				maximumEntries: 10,
+				maximumEntries: 5,
 				updateInterval: 1*60*1000, // Update every 1 minutes
 				fade: false,   
 				showProject: false,  
 				wrapEvents: true, 
-				projects: [ 2329820643 ], 
+				projects: [ 2329932738 ], 
 				maxTitleLength: 50,
 				displayTasksWithinDays: 0,
 		  	}
