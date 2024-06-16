@@ -22,3 +22,6 @@
 [submodule "mounts/modules/MMM-ImagesPhotos"]
 	path = mounts/modules/MMM-ImagesPhotos
 	url = https://github.com/roramirez/MMM-ImagesPhotos.git
+[submodule "mounts/modules/MMM-ModuleScheduler"]
+	path = mounts/modules/MMM-ModuleScheduler
+	url = https://github.com/ianperrin/MMM-ModuleScheduler.git

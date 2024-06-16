@@ -34,6 +34,12 @@
     width:33%;
   }
   
+
+  /* For chromecast display */
+  html {
+   zoom: 70%;
+  }
+
   /* Weather */
 
   [class*=weathericon][class*="sun"] { color: #ffff00; }

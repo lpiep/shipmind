@@ -38,7 +38,18 @@ let config = {
 
 	modules: [
 		{
+			module: 'MMM-ModuleScheduler'
+		},
+		{
 			module: "alert",
+		},
+		{
+			module: "helloworld",
+			position: "top_bar",
+			config: {
+				text: "<span style='color: red; font-size:1.75em'>Tuesday is trash day!!!</span>", 
+				module_schedule: {from: '0 15 * * 1', to: '0 10 * * 2' },
+			}
 		},
 		{
 			module: "updatenotification",

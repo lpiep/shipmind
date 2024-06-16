@@ -6,6 +6,10 @@ npm install request
 npm install
 cd "$OLDPWD"
 
-cd  /opt/magic_mirror/modules/MMM-Random-local-image
-npm ci
+cd  /opt/magic_mirror/modules/MMM-ImagesPhotos
+npm install
+cd "$OLDPWD"
+
+cd  /opt/magic_mirror/modules/MMM-ModuleScheduler
+npm install --production
 cd "$OLDPWD"
