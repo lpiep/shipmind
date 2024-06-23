@@ -13,3 +13,8 @@ cd "$OLDPWD"
 cd  /opt/magic_mirror/modules/MMM-ModuleScheduler
 npm install --production
 cd "$OLDPWD"
+
+
+cd  /opt/magic_mirror/modules/MMM-AccuWeatherForecastDeluxe 
+npm install
+cd "$OLDPWD"

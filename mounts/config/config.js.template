@@ -46,6 +46,7 @@ let config = {
 		{
 			module: "helloworld",
 			position: "top_bar",
+			classes: 'scheduler',
 			config: {
 				text: "<span style='color: red; font-size:1.75em'>Tuesday is trash day!!!</span>", 
 				module_schedule: {from: '0 15 * * 1', to: '0 10 * * 2' },
@@ -183,36 +184,25 @@ let config = {
 				]
 			}
 		},
-		/*{
-			module: "compliments",
-			position: "lower_third"
-		},*/
 		{
-			module: "weather",
+			module: "MMM-AccuWeatherForecastDeluxe",
+			header: "",
 			position: "top_center",
+			disabled: false,
 			config: {
-				weatherProvider: "weathergov",
-				apiBase: "https://api.weather.gov/points/",
-				lat: 48.76745,
-				lon: -122.47485,
-				/*weatherProvider: "openweathermap",*/
-				onlyTemp: 'true',
-				type: "current",
-				showPrecipitationProbability: 'true',
-				/*location: "Bellingham",*/
-				/*locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city*/
-				/*apiKey: "${OPENWEATHER_API_KEY}",*/
-			}
-		},		{
-			module: "weather",
-			position: "top_center",
-			config: {
-				weatherProvider: "weathergov",
-				apiBase: "https://api.weather.gov/points/",
-				lat: 48.76745,
-				lon: -122.47485,
-				type: "forecast",
-				fade: false, 
+				apikey: "${ACCUWEATHER_API_KEY}",
+				locationKey: "331416",
+				updateInterval: 30,
+				units: "imperial",
+				hourlyForecastInterval: 3,
+				maxHourliesToShow: 5,
+				maxDailiesToShow: 5,
+				ignoreToday: true,
+				showDayAsTomorrowInDailyForecast: false,
+				showPrecipitationProbability: false,
+				iconset: "6oa",
+				label_high: "",
+				label_low: "",
 			}
 		},
 		{

@@ -25,3 +25,6 @@
 [submodule "mounts/modules/MMM-ModuleScheduler"]
 	path = mounts/modules/MMM-ModuleScheduler
 	url = https://github.com/ianperrin/MMM-ModuleScheduler.git
+[submodule "mounts/modules/MMM-AccuWeatherForecastDeluxe"]
+	path = mounts/modules/MMM-AccuWeatherForecastDeluxe
+	url = https://github.com/BigBot89/MMM-AccuWeatherForecastDeluxe

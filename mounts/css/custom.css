@@ -30,59 +30,68 @@
 
   }
 
-  .region {
-    width:33%;
-  }
-  
-
-  /* For chromecast display */
-  html {
-   zoom: 70%;
-  }
-
-  /* Weather */
-
-  [class*=weathericon][class*="sun"] { color: #ffff00; }
-  [class*=weathericon][class*="rain"] { color: lightskyblue; }
-  [class*=weathericon][class*="showers"] { color: lightskyblue; }
-  [class*=weathericon][class*="sprinkle"] { color: lightskyblue; }
-  [class*=weathericon][class*="haze"] { color: darkkhaki; }
-  [class*=weathericon][class*="smog"] { color: darkkhaki; }
-  [class*=weathericon][class*="smoke"] { color: darkkhaki; }
-  [class*=weathericon][class*="sleet"] { color: #fff; }
-  [class*=weathericon][class*="snow"] { color: #fff; }
-  [class*=weathericon][class*="cloud"] { color: lightgrey; }
+.region {
+  width:33%;
+}
 
 
+/* For chromecast display */
+html {
+  zoom: 70%;
+}
 
-  /* Todoist */ 
-  .MMM-Todoist .title {
-    padding-left: 1.5em;
-    text-indent: -1.5em;
-    max-width: 100%;
-  }
-  
-  /* stop mmm-todoist from infecting my calendar */
-  .today {
-    text-decoration: none #03a05c;
-  }
+/* Weather */
 
-  .tomorrow {
-    text-decoration: none #166cec;
-  }
+[class*=weathericon][class*="sun"] { color: #ffff00; }
+[class*=weathericon][class*="rain"] { color: lightskyblue; }
+[class*=weathericon][class*="showers"] { color: lightskyblue; }
+[class*=weathericon][class*="sprinkle"] { color: lightskyblue; }
+[class*=weathericon][class*="haze"] { color: darkkhaki; }
+[class*=weathericon][class*="smog"] { color: darkkhaki; }
+[class*=weathericon][class*="smoke"] { color: darkkhaki; }
+[class*=weathericon][class*="sleet"] { color: #fff; }
+[class*=weathericon][class*="snow"] { color: #fff; }
+[class*=weathericon][class*="cloud"] { color: lightgrey; }
 
-  /* don't rememeber what this is */ 
-  .divTableCell.title::before{ 
-    content:" ☐ ";
-  }
 
-  /* Highlight rules (used on imminent/important things) */
-  .highlight .small {    
-    --font-size-small: 1.15rem;
-    font-weight: 300
-  }
 
-  .calendar .time {    
-    font-size: .75rem;
-  }
+/* Todoist */ 
+.MMM-Todoist .title {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  max-width: 100%;
+}
 
+/* stop mmm-todoist from infecting my calendar */
+.today {
+  text-decoration: none #03a05c;
+}
+
+.tomorrow {
+  text-decoration: none #166cec;
+}
+
+/* don't rememeber what this is */ 
+.divTableCell.title::before{ 
+  content:" ☐ ";
+}
+
+/* Highlight rules (used on imminent/important things) */
+.highlight .small {    
+  --font-size-small: 1.15rem;
+  font-weight: 300
+}
+
+.calendar .time {    
+  font-size: .75rem;
+}
+
+/* hide city name in AP module */
+.airLocation {
+  display: none !important;
+}
+
+/* tweak weather module display */
+.MMM-AccuWeatherForecastDeluxe .module-content {
+  width: 100%;
+}
