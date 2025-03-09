@@ -39,7 +39,7 @@ This is based on the the docker implementation of MagicMirror2 at: https://githu
 
 ### Images
 
-Images are copied nightly using cron to `shipmind/mounts/modules/MMM-ImageSlideshow/` from the google drive link (in `mnt`). Soft links do not work! 
+The Newt of the Day images are drawn from `mounts/images` at random. 
 
 ### Translations / Messages
 
@@ -52,5 +52,5 @@ API keys and secret links are stored in `/run/secret.env`, which is of course no
  - `TODOIST_API_KEY`
  - `LOGAN_CAL_ICS`
  - `LINDSAY_CAL_ICS`
-
-Access to the shared Google photos album should be controlled on Drive. 
+ - `AIRNOW_API_KEY`
+ - `ACCUWEATHER_API_KEY`
