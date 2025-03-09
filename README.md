@@ -4,6 +4,14 @@ This is Logan and Lindsay's home implementation of Magic Mirror, for remembering
 
 ## How To
 
+### Display
+
+Uses Ubuntu Frame to show on display connected to my home server.
+
+[Instructions](https://mir-server.io/docs/run-ubuntu-frame-on-your-device)
+
+
+
 ### To Do List
 
 Use the Todoist App or [Website](https://todoist.com/) to add or check off items from the projects: 

@@ -96,10 +96,16 @@ let config = {
 						url: "${LOGAN_CAL_ICS}",
 						color: 'DarkRed',
 					},
+					{
+						name: "trash",
+						symbol: "calendar",
+						url: "https://recollect.a.ssl.fastly.net/api/places/1D424BB4-EAAD-11ED-819A-38AA395C4E39/services/1480/events.en-US.ics?client_id=0A9E9292-5988-11EF-8050-1EBFFC4B3A4C",
+						color: '#F0FFFF',
+					},
 				]
 			}
 		},
-		{
+		/*{
 			module: 'MMM-Todoist',
 			classes: "highlight",
 			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
@@ -108,7 +114,7 @@ let config = {
 				hideWhenEmpty: false,
 				accessToken: "${TODOIST_API_KEY}",
 				maximumEntries: 10,
-				updateInterval: 1*60*1000, // Update every 1 minutes
+				updateInterval: 5*60*1000, // Update every 1 minutes
 				fade: false,   
 				showProject: false,  
 				wrapEvents: true, 
@@ -152,7 +158,7 @@ let config = {
 				maxTitleLength: 50,
 				displayTasksWithinDays: 0,
 		  	}
-		},
+		},*/
 		{
 			module: "calendar",
 			header: "Upcoming",
@@ -185,24 +191,42 @@ let config = {
 			}
 		},
 		{
-			module: "MMM-AccuWeatherForecastDeluxe",
-			header: "",
+			module: "weather",
 			position: "top_center",
-			disabled: false,
 			config: {
-				apikey: "${ACCUWEATHER_API_KEY}",
-				locationKey: "331416",
-				updateInterval: 30,
-				units: "imperial",
-				hourlyForecastInterval: 3,
-				maxHourliesToShow: 5,
-				maxDailiesToShow: 5,
-				ignoreToday: true,
-				showDayAsTomorrowInDailyForecast: false,
-				showPrecipitationProbability: false,
-				iconset: "6oa",
-				label_high: "",
-				label_low: "",
+				weatherProvider: "pirateweather",
+				//apiBase: 'https://api.pirateweather.net',
+				//weatherEndpoint: "forecast",
+				lat: 48.76745,
+				lon: -122.47485,
+				//onlyTemp: 'true',
+				type:'current',
+				apiKey: "${PIRATEWEATHER_API_KEY}",
+			}
+		},		{
+			module: "weather",
+			position: "top_center",
+			config: {
+				weatherProvider: "pirateweather",
+				//apiBase: 'https://api.pirateweather.net',
+				//weatherEndpoint: "forecast",
+				lat: 48.76745,
+				lon: -122.47485,
+				type: "forecast",
+				fade: false, 
+				showPrecipitationProbability: 'true',
+				showPrecipitationAmount: 'true',
+				apiKey: "${PIRATEWEATHER_API_KEY}",
+			}
+		},
+		{
+			module: "MMM-NOAATides",
+			position: "bottom_left", //put this below a weather module in config.js, and so it is on screen
+			config: {
+			stationID: 9449424, 
+			datum: "MSL", // "mean sea level"
+			time: "lst_ldt", // local standard time/ daylight time
+			units: "english", // or "metric"
 			}
 		},
 		{
